@@ -16,6 +16,7 @@ img{
 
 h2, h3, p {
     margin-top: 30px;
+    text-align: center;
 }
 
 p{
@@ -28,5 +29,6 @@ p{
     width: 70%;
     padding: 20px;
     margin-bottom: 30px;
+    text-align: center;
 
 }
