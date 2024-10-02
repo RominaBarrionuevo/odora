@@ -25,10 +25,11 @@ li{
 }
 
 nav ul li a {
-    color: rgb(226, 43, 141);
+    /*color: rgb(226, 43, 141);*/
+    color:#a20a47;
     text-decoration: none;
 }
 
 nav ul li a:hover{
-    color:rgb(8, 8, 8);
+    color:rgb(226, 43, 141);
 }

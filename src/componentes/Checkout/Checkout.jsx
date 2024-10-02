@@ -4,7 +4,7 @@ import { useState, useContext } from "react"
 import {CarritoContext} from "../../context/CarritoContext" 
 import { db } from "../../services/config"
 import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
-
+import "./checkout.css"
 const Checkout = () => {
     const [nombre, setNombre] = useState("")
     const [apellido, setApellido] = useState("")
@@ -22,14 +22,14 @@ const Checkout = () => {
         e.preventDefault()
 
         if(!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
-            setError("Por favor completa todos los campos o moriras maldito!")
+            setError("Por favor completa todos los campos")
             return;
         }
         
     
 
         if(email !== emailConfirmacion){
-            setError("Los campos del email no coinciden, maildito insecto")
+            setError("Los campos del email no coinciden")
             return;
         }
 
@@ -89,21 +89,22 @@ const Checkout = () => {
     }
 
   return (
-    <div>
+    <div >
         <h2> Checkout:</h2>
 
         <form onSubmit={manejadorFormulario}>
             {   
                 carrito.map(producto => (
                     <div key={producto.item.id}>
-                        <p>{producto.item.nombre}</p>
-                        <p>{producto.item.precio} x {producto.cantidad}</p>
-                        <p>{producto.item.precio}</p>
+                        <p>Producto: {producto.item.nombre}</p>
+                        <p>Precio Unitario: ${producto.item.precio} * Cantidad: {producto.cantidad}</p>
+                       
                         <hr />
                     </div>
                 ))
             }
-            <div>
+            <div className="form">
+            <div >
                  <label htmlFor=""> Nombre </label>
                  <input type="text" onChange={(e)=>setNombre(e.target.value)} value={nombre} />                
             </div>
@@ -123,11 +124,12 @@ const Checkout = () => {
             <label htmlFor=""> Email Confirmacion </label> 
             <input type="email" onChange={(e)=>setEmailConfirmacion(e.target.value)} value={emailConfirmacion}/>
             </div>
+
                 {
                     error && <p style={{color:"red"}}> {error}</p>
                 }
-
-            <button type="submit"> Confirmar Compra </button>
+</div>
+            <button className="botonForm" type="submit"> Confirmar Compra </button>
             {
                 ordenId && (
                     <strong>¡Gracias por tu compra! Tu numero de orden es: {ordenId}</strong>

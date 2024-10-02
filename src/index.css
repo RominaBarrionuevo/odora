@@ -1,4 +1,21 @@
 *{
   margin: 0px;
   padding: 0px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #a20a47;
+  
+}
+
+p{
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+h3{
+  font-size: 15px;
+  margin-top: 5px;
 }

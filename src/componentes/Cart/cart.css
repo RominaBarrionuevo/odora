@@ -1,0 +1,44 @@
+.botones {
+    background-color:#fbfbd37d;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: #a20a47;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin:5px;
+    color: #a20a47;
+    margin-left: 60%!important;
+}
+
+.contCarrito h3{
+ text-align: left;
+ margin-left: 60%;
+ font-size: 18px;
+ margin-bottom: -40px;
+}
+
+
+.contCarrito .botones{
+margin: 30px;
+margin-top: 80px;
+}
+
+.contCarrito hr{
+    color: #a20a47!important;
+    border-style: solid;
+    height: 10px!important;
+}
+
+h2{
+    font-size: 20px!important;
+margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color:#a20a47;
+}
+
+link a{
+    margin-left: 20px;
+}

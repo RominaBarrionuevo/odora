@@ -1,0 +1,43 @@
+.botones {
+    background-color:#fbfbd37d;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: #a20a47;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin:5px;
+    color: #a20a47;
+}
+
+.itemsCarrito{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.itemsCarrito h4{
+    font-size: 15px;
+    margin-left: 90px;
+    text-align: center;
+}
+
+.itemsCarrito p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.botonEliminar {
+    background-color:#fbfbd37d;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: #a20a47;
+    padding: 10px;
+    margin-right:200px;
+    color: #a20a47;
+}

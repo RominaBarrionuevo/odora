@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
- // apiKey: "AIzaSyDL2NNTnOw0a2bKJ0tjVfYtGJe-PDI_EwU",
+ 
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "odora-59615.firebaseapp.com",
   projectId: "odora-59615",

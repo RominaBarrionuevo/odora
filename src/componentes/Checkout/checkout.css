@@ -1,0 +1,41 @@
+.form{
+   
+  margin-left:20px ;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+label {
+    
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 10px;
+    padding:3px;
+    
+}
+
+input{
+    border-radius: 5px;
+   
+}
+
+.botonForm{
+    background-color:#fbfbd37d;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: #a20a47;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin:5px;
+    color: #a20a47;
+    margin-left: 60px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color:#a20a47
+}

@@ -35,12 +35,7 @@ const App = () => {
     
     </BrowserRouter>
 
-
-
-
    
-    
-    
     </>
   )
 }

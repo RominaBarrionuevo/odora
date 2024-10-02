@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
 import { db } from "../../services/config";
 import { collection, getDocs, query, where } from "firebase/firestore";
+import "./ItemListContainer.css"
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
@@ -36,7 +37,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <h2 style={{ textAlign: "center", marginTop:"20px", fontSize:"30px" }}>Fragancias Importadas</h2>
+            <h2 style={{ textAlign: "center", marginTop:"20px", fontSize:"30px", color:"#a20a47" }}>Fragancias Importadas</h2>
             {loading ? <Loader/> : <ItemList productos={productos}/>}
         </>
     )

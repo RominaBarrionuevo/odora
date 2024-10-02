@@ -7,6 +7,7 @@ import { CarritoContext } from '../../context/CarritoContext'
 import { useContext } from 'react'
 import { toast } from 'react-toastify';
 
+
 const ItemDetail = ({id, nombre, precio, img, detalle, stock}) => {
 
 
@@ -30,19 +31,27 @@ const manejadorCantidad = (cantidad) => {
 
   return (
     <div className='contenedorItem'>
-        <h2>Nombre: {nombre} </h2>
-        <h3>Precio {precio} </h3>
-        <h3>ID: {id}</h3>
-        <img src={img} alt={nombre} />
+
+      <div >
+      <img src={img} alt={nombre} />
+      </div>
+      <div>
+        <h3>Nombre: {nombre} </h3>
+        <h6>Precio {precio} </h6>
+        <p>ID: {id}</p>
+       
         <p>{detalle}</p>
 
 
         
         {
          
-          agregarCantidad > 0 ? (<Link to="/cart"> Terminar Compra</Link>) : (<Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad}/>)
+          agregarCantidad > 0 ? (<Link to="/cart"> Finalizar Compra</Link>) : (<Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad}/>)
         }
+       
 
+       <br></br> <Link to="/"> Seguir Comprando</Link>
+       </div>
     </div>
   )
 }
