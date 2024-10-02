@@ -8,7 +8,7 @@ const NavBar = () => {
     <header>
       
       <Link to="/">
-        <img  className='logoOdora' src={"/public/img/Odora.png"} alt="Logo Odora" />
+        <img  className='logoOdora' src={"../img/Odora.png"} alt="Logo Odora" />
       </Link>
        
         <nav>
