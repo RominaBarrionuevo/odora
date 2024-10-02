@@ -10,7 +10,7 @@ const CartItem = ({item, cantidad}) => {
     <div className='itemsCarrito'>
         <h4>{item.nombre}</h4>
         <p>Cantidad: {cantidad}</p>
-        <p>Precio:{item.precio}</p>
+        <p>Precio: $ {item.precio}</p>
         <button className="botonEliminar" onClick={()=>eliminarProducto(item.id)}>Eliminar</button>
     </div>
   )
