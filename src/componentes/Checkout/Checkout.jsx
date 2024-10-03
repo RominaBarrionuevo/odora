@@ -121,7 +121,7 @@ const Checkout = () => {
             <input type="email" onChange={(e)=>setEmail(e.target.value)} value={email} />
             </div>
             <div>
-            <label htmlFor=""> Email Confirmacion </label> 
+            <label htmlFor=""> Email Confirmación </label> 
             <input type="email" onChange={(e)=>setEmailConfirmacion(e.target.value)} value={emailConfirmacion}/>
             </div>
 
